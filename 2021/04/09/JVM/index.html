@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/Craaaazy/Craaaazy.github.io/img/favicon.png">
-  <link rel="icon" href="/Craaaazy/Craaaazy.github.io/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -22,13 +22,13 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
   <meta name="author" content="Acur Ning">
   <meta name="keywords" content="">
   
-  <title>JVM - Ning&#39;s Blog</title>
+  <title>JVM - 笔记本</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
-  <link  rel="stylesheet" href="/Craaaazy/Craaaazy.github.io/lib/hint/hint.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
 
   
     
@@ -53,17 +53,17 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
 
 
-<link  rel="stylesheet" href="/Craaaazy/Craaaazy.github.io/css/main.css" />
+<link  rel="stylesheet" href="/css/main.css" />
 
 <!-- 自定义样式保持在最底部 -->
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"github.com","root":"/Craaaazy/Craaaazy.github.io/","version":"1.8.9-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+    var CONFIG = {"hostname":"craaaazy.github.io","root":"/","version":"1.8.9-a","typing":{"enable":false,"typeSpeed":60,"cursorChar":"|","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
   </script>
-  <script  src="/Craaaazy/Craaaazy.github.io/js/utils.js" ></script>
-  <script  src="/Craaaazy/Craaaazy.github.io/js/color-schema.js" ></script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
@@ -72,7 +72,7 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/Craaaazy/Craaaazy.github.io/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>笔记</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -89,7 +89,7 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/Craaaazy/Craaaazy.github.io/">
+              <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
                 首页
               </a>
@@ -101,8 +101,8 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/Craaaazy/Craaaazy.github.io/archives/">
-                <i class="iconfont icon-archive-fill"></i>
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-book"></i>
                 归档
               </a>
             </li>
@@ -113,31 +113,7 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/Craaaazy/Craaaazy.github.io/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                分类
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/Craaaazy/Craaaazy.github.io/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/Craaaazy/Craaaazy.github.io/about/">
+              <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 关于
               </a>
@@ -162,12 +138,14 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/Craaaazy/Craaaazy.github.io/img/default.png') no-repeat center center;
+         style="background: url('/img/background.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
             <span class="h2" id="subtitle" title="JVM">
+              
+                JVM
               
             </span>
 
@@ -232,9 +210,9 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
             <h1 style="display: none">JVM</h1>
             
             <div class="markdown-body">
-              <h2 id="1、运行时数据区域"><a href="#1、运行时数据区域" class="headerlink" title="1、运行时数据区域"></a>1、运行时数据区域</h2><img src="/Craaaazy/Craaaazy.github.io/2021/04/09/JVM/image.png" srcset="/Craaaazy/Craaaazy.github.io/img/loading.gif" lazyload class title="1.7之前 运行时数据区域">
+              <h2 id="1、运行时数据区域"><a href="#1、运行时数据区域" class="headerlink" title="1、运行时数据区域"></a>1、运行时数据区域</h2><img src="/2021/04/09/JVM/image.png" srcset="/img/loading.gif" lazyload class title="1.7之前 运行时数据区域">
 <p>上图1.7以前</p>
-<img src="/Craaaazy/Craaaazy.github.io/2021/04/09/JVM/2019-3Java%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9FJDK1.8.png" srcset="/Craaaazy/Craaaazy.github.io/img/loading.gif" lazyload class title="1.7之前 运行时数据区域">
+<img src="/2021/04/09/JVM/2019-3Java%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9FJDK1.8.png" srcset="/img/loading.gif" lazyload class title="1.7之前 运行时数据区域">
 <h3 id="关于字符串常量池"><a href="#关于字符串常量池" class="headerlink" title="关于字符串常量池"></a>关于字符串常量池</h3><p>在JDK6.0及之前版本，字符串常量池是放在Perm Gen区(也就是方法区)中；<br>在JDK7.0版本，字符串常量池被移到了堆中了。至于为什么移到堆内，大概是由于方法区的内存空间太小了。</p>
 <h3 id="java虚拟机栈（vm-stack）"><a href="#java虚拟机栈（vm-stack）" class="headerlink" title="java虚拟机栈（vm stack）"></a>java虚拟机栈（vm stack）</h3><p>每个 Java 方法在执行的同时会创建一个栈帧用于存储<strong>局部变量表、操作数栈、常量池引用</strong>等信息。从方法调用直至执行完成的过程，对应着一个栈帧在 Java 虚拟机栈中入栈和出栈的过程。<br>该区域可能抛出以下异常：</p>
 <span id="more"></span>
@@ -256,26 +234,26 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
 <li>永生代(Permanent Generation)</li>
 </ol>
 <p>JDK 8 版本之后方法区（HotSpot 的永久代）被彻底移除了（JDK1.7 就已经开始了），取而代之是元空间，元空间使用的是直接内存。</p>
-<img src="/Craaaazy/Craaaazy.github.io/2021/04/09/JVM/JVM%E5%A0%86%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84-jdk8.png" srcset="/Craaaazy/Craaaazy.github.io/img/loading.gif" lazyload class title="JVM堆内存结构-jdk8">
+<img src="/2021/04/09/JVM/JVM%E5%A0%86%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84-jdk8.png" srcset="/img/loading.gif" lazyload class title="JVM堆内存结构-jdk8">
 <p><strong>上图所示的 Eden 区、两个 Survivor 区都属于新生代（为了区分，这两个 Survivor 区域按照顺序被命名为 from 和 to），中间一层属于老年代。</strong></p>
 <h3 id="方法区"><a href="#方法区" class="headerlink" title="方法区"></a>方法区</h3><p>方法区与 Java 堆一样，是各个线程共享的内存区域，它用于<strong>存储已被虚拟机加载的类信息、常量、静态变量</strong>、即时编译器编译后的代码等数据。虽然 <strong>Java 虚拟机规范把方法区描述为堆的一个逻辑部分</strong>，但是它却有一个别名叫做 <strong>Non-Heap（非堆）</strong>，目的应该是与 Java 堆区分开来。</p>
 <h4 id="方法区和永久代的关系"><a href="#方法区和永久代的关系" class="headerlink" title="方法区和永久代的关系"></a>方法区和永久代的关系</h4><blockquote>
 <p>《Java 虚拟机规范》只是规定了有方法区这么个概念和它的作用，并没有规定如何去实现它。那么，在不同的 JVM 上方法区的实现肯定是不同的了。 <strong>方法区和永久代的关系很像 Java 中接口和类的关系，类实现了接口，而永久代就是 HotSpot 虚拟机对虚拟机规范中方法区的一种实现方式。</strong> 也就是说，永久代是 HotSpot 的概念，方法区是 Java 虚拟机规范中的定义，是一种规范，而永久代是一种实现，一个是标准一个是实现，其他的虚拟机实现并没有永久代这一说法。</p>
 </blockquote>
-<p>JDK 1.8 的时候，方法区（HotSpot 的永久代）被彻底移除了（JDK1.7 就已经开始了），取而代之是元空间，元空间使用的是直接内存。<br><a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/jvm/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.md#253-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%B0%86%E6%B0%B8%E4%B9%85%E4%BB%A3-permgen-%E6%9B%BF%E6%8D%A2%E4%B8%BA%E5%85%83%E7%A9%BA%E9%97%B4-metaspace-%E5%91%A2">为什么要将永久代-permgen-替换为元空间-metaspace-呢</a></p>
+<p>JDK 1.8 的时候，方法区（HotSpot 的永久代）被彻底移除了（JDK1.7 就已经开始了），取而代之是元空间，元空间使用的是直接内存。<br><a target="_blank" rel="noopener" href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/jvm/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.md#253-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%B0%86%E6%B0%B8%E4%B9%85%E4%BB%A3-permgen-%E6%9B%BF%E6%8D%A2%E4%B8%BA%E5%85%83%E7%A9%BA%E9%97%B4-metaspace-%E5%91%A2">为什么要将永久代-permgen-替换为元空间-metaspace-呢</a></p>
 <h3 id="运行时常量池"><a href="#运行时常量池" class="headerlink" title="运行时常量池"></a>运行时常量池</h3><p>运行时常量池是方法区的一部分。Class 文件中除了有类的版本、字段、方法、接口等描述信息外，还有常量池表（用于存放编译期生成的各种字面量和符号引用）<br>既然运行时常量池是方法区的一部分，自然受到方法区内存的限制，当常量池无法再申请到内存时会抛出 OutOfMemoryError 错误。</p>
 <h3 id="直接内存"><a href="#直接内存" class="headerlink" title="直接内存"></a>直接内存</h3><p><strong>直接内存并不是虚拟机运行时数据区的一部分，也不是虚拟机规范中定义的内存区域，但是这部分内存也被频繁地使用。而且也可能导致 OutOfMemoryError 错误出现。</strong><br>**</p>
-<h3 id="对象的创建"><a href="#对象的创建" class="headerlink" title="对象的创建"></a>对象的创建</h3><img src="/Craaaazy/Craaaazy.github.io/2021/04/09/JVM/Java%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BF%87%E7%A8%8B.png" srcset="/Craaaazy/Craaaazy.github.io/img/loading.gif" lazyload class title="Java创建对象的过程">
+<h3 id="对象的创建"><a href="#对象的创建" class="headerlink" title="对象的创建"></a>对象的创建</h3><img src="/2021/04/09/JVM/Java%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BF%87%E7%A8%8B.png" srcset="/img/loading.gif" lazyload class title="Java创建对象的过程">
 <h4 id="Step1-类加载检查"><a href="#Step1-类加载检查" class="headerlink" title="Step1:类加载检查"></a>Step1:类加载检查</h4><p>虚拟机遇到一条 new 指令时，首先将去检查这个指令的参数是否能在常量池中定位到这个类的符号引用，并且检查这个符号引用代表的类是否已被加载过、解析和初始化过。如果没有，那必须先执行相应的类加载过程。</p>
 <h4 id="Step2-分配内存"><a href="#Step2-分配内存" class="headerlink" title="Step2:分配内存"></a>Step2:分配内存</h4><p>在<strong>类加载检查</strong>通过后，接下来虚拟机将为新生对象<strong>分配内存</strong>。对象所需的内存大小在类加载完成后便可确定，为对象分配空间的任务等同于把一块确定大小的内存从 Java 堆中划分出来。<strong>分配方式</strong>有 <strong>“指针碰撞”</strong> 和 <strong>“空闲列表”</strong> 两种，<strong>选择哪种分配方式由 Java 堆是否规整决定，而 Java 堆是否规整又由所采用的垃圾收集器是否带有压缩整理功能决定</strong>。而 Java 堆内存是否规整，取决于 GC 收集器的算法是”标记-清除”，还是”标记-整理”（也称作”标记-压缩”），值得注意的是，复制算法内存也是规整的</p>
-<img src="/Craaaazy/Craaaazy.github.io/2021/04/09/JVM/%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F.png" srcset="/Craaaazy/Craaaazy.github.io/img/loading.gif" lazyload class title="内存分配的两种方式">
+<img src="/2021/04/09/JVM/%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F.png" srcset="/img/loading.gif" lazyload class title="内存分配的两种方式">
 <h4 id="Step3-初始化零值"><a href="#Step3-初始化零值" class="headerlink" title="Step3:初始化零值"></a>Step3:初始化零值</h4><p>内存分配完成后，虚拟机需要将分配到的内存空间都初始化为零值（不包括对象头），这一步操作保证了对象的实例字段在 Java 代码中可以不赋初始值就直接使用，程序能访问到这些字段的数据类型所对应的零值。</p>
 <h4 id="Step4-设置对象头"><a href="#Step4-设置对象头" class="headerlink" title="Step4:设置对象头"></a>Step4:设置对象头</h4><p>初始化零值完成之后，<strong>虚拟机要对对象进行必要的设置</strong>，例如这个对象是哪个类的实例、如何才能找到类的元数据信息、对象的哈希码、对象的 GC 分代年龄等信息。 <strong>这些信息存放在对象头中。</strong> 另外，根据虚拟机当前运行状态的不同，如是否启用偏向锁等，对象头会有不同的设置方式。</p>
 <h4 id="Step5-执行-init-方法"><a href="#Step5-执行-init-方法" class="headerlink" title="Step5:执行 init 方法"></a>Step5:执行 init 方法</h4><p>在上面工作都完成之后，从虚拟机的视角来看，一个新的对象已经产生了，但从 Java 程序的视角来看，对象创建才刚开始，<code>&lt;init&gt;</code> 方法还没有执行，所有的字段都还为零。所以一般来说，执行 new 指令之后会接着执行 <code>&lt;init&gt;</code> 方法，把对象按照程序员的意愿进行初始化，这样一个真正可用的对象才算完全产生出来。</p>
 <h2 id="2、JVM-GC"><a href="#2、JVM-GC" class="headerlink" title="2、JVM GC"></a>2、JVM GC</h2><h3 id="对象优先在-eden-区分配"><a href="#对象优先在-eden-区分配" class="headerlink" title="对象优先在 eden 区分配"></a>对象优先在 eden 区分配</h3><p>目前主流的垃圾收集器都会采用分代回收算法，因此需要将堆内存分为新生代和老年代，这样我们就可以根据各个年代的特点选择合适的垃圾收集算法。<br>大多数情况下，对象在新生代中 eden 区分配。当 eden 区没有足够空间进行分配时，虚拟机将发起一次 Minor GC.</p>
-<img src="/Craaaazy/Craaaazy.github.io/2021/04/09/JVM/vm_option.png" srcset="/Craaaazy/Craaaazy.github.io/img/loading.gif" lazyload class title="vm option">
+<img src="/2021/04/09/JVM/vm_option.png" srcset="/img/loading.gif" lazyload class title="vm option">
 
-<img src="/Craaaazy/Craaaazy.github.io/2021/04/09/JVM/fenpei.png" srcset="/Craaaazy/Craaaazy.github.io/img/loading.gif" lazyload class title="fenpei">
+<img src="/2021/04/09/JVM/fenpei.png" srcset="/img/loading.gif" lazyload class title="fenpei">
 <p><strong>简单解释一下为什么会出现这种情况：</strong> 因为给 allocation2 分配内存的时候 eden 区内存几乎已经被分配完了，我们刚刚讲了当 Eden 区没有足够空间进行分配时，虚拟机将发起一次 Minor GC.GC 期间虚拟机又发现 allocation1 无法存入 Survivor 空间，所以只好通过 <strong>分配担保机制</strong> 把新生代的对象提前转移到老年代中去，老年代上的空间足够存放 allocation1，所以不会出现 Full GC。执行 Minor GC 后，后面分配的对象如果能够存在 eden 区的话，还是会在 eden 区分配内存。</p>
 <h3 id="大对象直接进入老年代"><a href="#大对象直接进入老年代" class="headerlink" title="大对象直接进入老年代"></a>大对象直接进入老年代</h3><p>大对象就是需要大量连续内存空间的对象（比如：字符串、数组）。<strong>为什么？</strong>为了避免为大对象分配内存时由于<strong>分配担保机制</strong>带来的复制而降低效率。</p>
 <h3 id="长期存活的对象将进入老年代"><a href="#长期存活的对象将进入老年代" class="headerlink" title="长期存活的对象将进入老年代"></a>长期存活的对象将进入老年代</h3><p>既然虚拟机采用了分代收集的思想来管理内存，那么内存回收时就必须能识别哪些对象应放在新生代，哪些对象应放在老年代中。为了做到这一点，虚拟机给每个对象一个对象年龄（Age）计数器。<br>如果对象在 Eden 出生并经过第一次 Minor GC 后仍然能够存活，并且能被 Survivor 容纳的话，将被移动到 Survivor 空间中，并将对象年龄设为 1。对象在 Survivor 中每熬过一次 MinorGC,年龄就增加 1 岁，当它的年龄增加到一定程度（默认为 15 岁），就会被晋升到老年代中。对象晋升到老年代的年龄阈值，可以通过参数 <code>-XX:MaxTenuringThreshold</code> 来设置。</p>
@@ -298,7 +276,7 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
 <ul>
 <li>该类所有的实例都已经被回收，也就是 Java 堆中不存在该类的任何实例。</li>
 <li>加载该类的 <code>ClassLoader</code> 已经被回收。</li>
-<li>该类对应的 <code>java.lang.Class</code> 对象没有在任何地方被引用，无法在任何地方通过反射访问该类的方法。<h3 id="垃圾收集算法"><a href="#垃圾收集算法" class="headerlink" title="垃圾收集算法"></a>垃圾收集算法</h3><h4 id="1、标记-清除算法"><a href="#1、标记-清除算法" class="headerlink" title="1、标记-清除算法"></a>1、标记-清除算法</h4>首先标记出所有不需要回收的对象，再统一回收掉没有被标记的对象。缺点是会产生不连续的内存碎片、且效率不高<h4 id="2、复制算法"><a href="#2、复制算法" class="headerlink" title="2、复制算法"></a>2、复制算法</h4>解决效率问题，将内存分为大小相同的两块，每次使用一块。这一块用完后，就将存活的对象复制到另一块去，然后再把使用的空间一次清理掉。这样就使每次的内存回收都是对内存区间的一半进行回收。<h4 id="3、标记-整理算法"><a href="#3、标记-整理算法" class="headerlink" title="3、标记-整理算法"></a>3、标记-整理算法</h4>根据老年代的特点提出的一种标记算法，标记过程仍然与“标记-清除”算法一样，但后续步骤不是直接对可回收对象回收，而是让所有存活的对象向一端移动，然后直接清理掉端边界以外的内存。<h4 id="4、分代收集算法"><a href="#4、分代收集算法" class="headerlink" title="4、分代收集算法"></a>4、分代收集算法</h4>当前虚拟机的垃圾收集都采用分代收集算法，这种算法没有什么新的思想，只是根据对象存活周期的不同将内存分为几块。一般将 java 堆分为新生代和老年代，这样我们就可以根据各个年代的特点选择合适的垃圾收集算法。<br>比如在新生代，每次有大量对象死去，可以选择复制算法。老年代中对象存活率高，而且没有额外的空间进行分配担保，所以可以使用标记清除或者标记整理算法<h3 id="垃圾收集器"><a href="#垃圾收集器" class="headerlink" title="垃圾收集器"></a>垃圾收集器</h3><img src="/Craaaazy/Craaaazy.github.io/2021/04/09/JVM/vm.png" srcset="/Craaaazy/Craaaazy.github.io/img/loading.gif" lazyload class title="vm">
+<li>该类对应的 <code>java.lang.Class</code> 对象没有在任何地方被引用，无法在任何地方通过反射访问该类的方法。<h3 id="垃圾收集算法"><a href="#垃圾收集算法" class="headerlink" title="垃圾收集算法"></a>垃圾收集算法</h3><h4 id="1、标记-清除算法"><a href="#1、标记-清除算法" class="headerlink" title="1、标记-清除算法"></a>1、标记-清除算法</h4>首先标记出所有不需要回收的对象，再统一回收掉没有被标记的对象。缺点是会产生不连续的内存碎片、且效率不高<h4 id="2、复制算法"><a href="#2、复制算法" class="headerlink" title="2、复制算法"></a>2、复制算法</h4>解决效率问题，将内存分为大小相同的两块，每次使用一块。这一块用完后，就将存活的对象复制到另一块去，然后再把使用的空间一次清理掉。这样就使每次的内存回收都是对内存区间的一半进行回收。<h4 id="3、标记-整理算法"><a href="#3、标记-整理算法" class="headerlink" title="3、标记-整理算法"></a>3、标记-整理算法</h4>根据老年代的特点提出的一种标记算法，标记过程仍然与“标记-清除”算法一样，但后续步骤不是直接对可回收对象回收，而是让所有存活的对象向一端移动，然后直接清理掉端边界以外的内存。<h4 id="4、分代收集算法"><a href="#4、分代收集算法" class="headerlink" title="4、分代收集算法"></a>4、分代收集算法</h4>当前虚拟机的垃圾收集都采用分代收集算法，这种算法没有什么新的思想，只是根据对象存活周期的不同将内存分为几块。一般将 java 堆分为新生代和老年代，这样我们就可以根据各个年代的特点选择合适的垃圾收集算法。<br>比如在新生代，每次有大量对象死去，可以选择复制算法。老年代中对象存活率高，而且没有额外的空间进行分配担保，所以可以使用标记清除或者标记整理算法<h3 id="垃圾收集器"><a href="#垃圾收集器" class="headerlink" title="垃圾收集器"></a>垃圾收集器</h3><img src="/2021/04/09/JVM/vm.png" srcset="/img/loading.gif" lazyload class title="vm">
 <h4 id="1、Serial-收集器"><a href="#1、Serial-收集器" class="headerlink" title="1、Serial 收集器"></a>1、Serial 收集器</h4>单线程收集器，在进行垃圾收集工作时必须暂停其他所有的工作线程，直到收集结束。优点是简单高效。Serial 收集器对于运行在 Client 模式下的虚拟机来说是个不错的选择。</li>
 </ul>
 <p><strong>新生代采用复制算法，老年代采用标记-整理算法。</strong></p>
@@ -313,7 +291,7 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
 <li><strong>重新标记：</strong> 重新标记阶段就是为了修正并发标记期间因为用户程序继续运行而导致标记产生变动的那一部分对象的标记记录，这个阶段的停顿时间一般会比初始标记阶段的时间稍长，远远比并发标记阶段时间短</li>
 <li><strong>并发清除：</strong> 开启用户线程，同时 GC 线程开始对未标记的区域做清扫。 </li>
 </ul>
-<img src="/Craaaazy/Craaaazy.github.io/2021/04/09/JVM/CMS%E6%94%B6%E9%9B%86%E5%99%A8.png" srcset="/Craaaazy/Craaaazy.github.io/img/loading.gif" lazyload class title="CMS收集器">
+<img src="/2021/04/09/JVM/CMS%E6%94%B6%E9%9B%86%E5%99%A8.png" srcset="/img/loading.gif" lazyload class title="CMS收集器">
 <p>从它的名字就可以看出它是一款优秀的垃圾收集器，主要优点：<strong>并发收集、低停顿</strong>。但是它有下面三个明显的缺点：</p>
 <ul>
 <li><strong>对 CPU 资源敏感；</strong></li>
@@ -372,7 +350,7 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/Craaaazy/Craaaazy.github.io/tags/jvm/">jvm</a>
+                      <a class="hover-with-bg" href="/tags/jvm/">jvm</a>
                     
                   </div>
                 
@@ -389,7 +367,7 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/Craaaazy/Craaaazy.github.io/2021/04/10/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/">
+                      <a href="/2021/04/10/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">数据库相关</span>
                         <span class="visible-mobile">上一篇</span>
@@ -487,15 +465,15 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
 <script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
-<script  src="/Craaaazy/Craaaazy.github.io/js/debouncer.js" ></script>
-<script  src="/Craaaazy/Craaaazy.github.io/js/events.js" ></script>
-<script  src="/Craaaazy/Craaaazy.github.io/js/plugins.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
 <!-- Plugins -->
 
 
   
-    <script  src="/Craaaazy/Craaaazy.github.io/js/img-lazyload.js" ></script>
+    <script  src="/js/img-lazyload.js" ></script>
   
 
 
@@ -523,23 +501,12 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
 
 
 
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-      typing(title)
-      
-    })(window, document);
-  </script>
 
 
-
-  <script  src="/Craaaazy/Craaaazy.github.io/js/local-search.js" ></script>
+  <script  src="/js/local-search.js" ></script>
   <script>
     (function () {
-      var path = "/Craaaazy/Craaaazy.github.io/local-search.xml";
+      var path = "/local-search.xml";
       $('#local-search-input').on('click', function() {
         searchFunc(path, 'local-search-input', 'local-search-result');
       });
@@ -564,7 +531,7 @@ java虚拟机栈（vm stack）每个 Java 方法在执行的同时会创建一�
 
 
 <!-- 主题的启动项 保持在最底部 -->
-<script  src="/Craaaazy/Craaaazy.github.io/js/boot.js" ></script>
+<script  src="/js/boot.js" ></script>
 
 
 </body>
